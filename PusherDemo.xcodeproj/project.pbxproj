@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2990330A144A7CC000AAE835 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29903309144A7CC000AAE835 /* UIKit.framework */; };
+		2990330C144A7CC000AAE835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2990330B144A7CC000AAE835 /* Foundation.framework */; };
+		2990330E144A7CC000AAE835 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2990330D144A7CC000AAE835 /* CoreGraphics.framework */; };
+		29903314144A7CC000AAE835 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29903312144A7CC000AAE835 /* InfoPlist.strings */; };
+		29903316144A7CC000AAE835 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29903315144A7CC000AAE835 /* main.m */; };
+		2990331A144A7CC000AAE835 /* PusherDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29903319144A7CC000AAE835 /* PusherDemoAppDelegate.m */; };
+		2990331E144A7CC000AAE835 /* PusherDemoAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2990331D144A7CC000AAE835 /* PusherDemoAppDelegate_iPhone.m */; };
+		29903321144A7CC000AAE835 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2990331F144A7CC000AAE835 /* MainWindow_iPhone.xib */; };
+		29903325144A7CC000AAE835 /* PusherDemoAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 29903324144A7CC000AAE835 /* PusherDemoAppDelegate_iPad.m */; };
+		29903328144A7CC000AAE835 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29903326144A7CC000AAE835 /* MainWindow_iPad.xib */; };
+		29903330144A7CC000AAE835 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2990332F144A7CC000AAE835 /* SenTestingKit.framework */; };
+		29903331144A7CC000AAE835 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29903309144A7CC000AAE835 /* UIKit.framework */; };
+		29903332144A7CC000AAE835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2990330B144A7CC000AAE835 /* Foundation.framework */; };
+		29903333144A7CC000AAE835 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2990330D144A7CC000AAE835 /* CoreGraphics.framework */; };
+		2990333B144A7CC000AAE835 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29903339144A7CC000AAE835 /* InfoPlist.strings */; };
+		2990333D144A7CC000AAE835 /* PusherDemoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2990333C144A7CC000AAE835 /* PusherDemoTests.h */; };
+		2990333F144A7CC000AAE835 /* PusherDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2990333E144A7CC000AAE835 /* PusherDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29903334144A7CC000AAE835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 299032FC144A7CBF00AAE835 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29903304144A7CC000AAE835;
+			remoteInfo = PusherDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29903305144A7CC000AAE835 /* PusherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PusherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29903309144A7CC000AAE835 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2990330B144A7CC000AAE835 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2990330D144A7CC000AAE835 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29903311144A7CC000AAE835 /* PusherDemo-Info.plist */ = {isa = PBXFileReference; path = "PusherDemo-Info.plist"; sourceTree = "<group>"; };
+		29903313144A7CC000AAE835 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		29903315144A7CC000AAE835 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29903317144A7CC000AAE835 /* PusherDemo-Prefix.pch */ = {isa = PBXFileReference; path = "PusherDemo-Prefix.pch"; sourceTree = "<group>"; };
+		29903318144A7CC000AAE835 /* PusherDemoAppDelegate.h */ = {isa = PBXFileReference; path = PusherDemoAppDelegate.h; sourceTree = "<group>"; };
+		29903319144A7CC000AAE835 /* PusherDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PusherDemoAppDelegate.m; sourceTree = "<group>"; };
+		2990331C144A7CC000AAE835 /* PusherDemoAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = PusherDemoAppDelegate_iPhone.h; path = iPhone/PusherDemoAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		2990331D144A7CC000AAE835 /* PusherDemoAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PusherDemoAppDelegate_iPhone.m; path = iPhone/PusherDemoAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		29903320144A7CC000AAE835 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		29903323144A7CC000AAE835 /* PusherDemoAppDelegate_iPad.h */ = {isa = PBXFileReference; name = PusherDemoAppDelegate_iPad.h; path = iPad/PusherDemoAppDelegate_iPad.h; sourceTree = "<group>"; };
+		29903324144A7CC000AAE835 /* PusherDemoAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PusherDemoAppDelegate_iPad.m; path = iPad/PusherDemoAppDelegate_iPad.m; sourceTree = "<group>"; };
+		29903327144A7CC000AAE835 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		2990332E144A7CC000AAE835 /* PusherDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PusherDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2990332F144A7CC000AAE835 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		29903338144A7CC000AAE835 /* PusherDemoTests-Info.plist */ = {isa = PBXFileReference; path = "PusherDemoTests-Info.plist"; sourceTree = "<group>"; };
+		2990333A144A7CC000AAE835 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2990333C144A7CC000AAE835 /* PusherDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PusherDemoTests.h; sourceTree = "<group>"; };
+		2990333E144A7CC000AAE835 /* PusherDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PusherDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29903302144A7CC000AAE835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2990330A144A7CC000AAE835 /* UIKit.framework in Frameworks */,
+				2990330C144A7CC000AAE835 /* Foundation.framework in Frameworks */,
+				2990330E144A7CC000AAE835 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2990332A144A7CC000AAE835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29903330144A7CC000AAE835 /* SenTestingKit.framework in Frameworks */,
+				29903331144A7CC000AAE835 /* UIKit.framework in Frameworks */,
+				29903332144A7CC000AAE835 /* Foundation.framework in Frameworks */,
+				29903333144A7CC000AAE835 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		299032FA144A7CBF00AAE835 = {
+			isa = PBXGroup;
+			children = (
+				2990330F144A7CC000AAE835 /* PusherDemo */,
+				29903336144A7CC000AAE835 /* PusherDemoTests */,
+				29903308144A7CC000AAE835 /* Frameworks */,
+				29903306144A7CC000AAE835 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29903306144A7CC000AAE835 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29903305144A7CC000AAE835 /* PusherDemo.app */,
+				2990332E144A7CC000AAE835 /* PusherDemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29903308144A7CC000AAE835 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29903309144A7CC000AAE835 /* UIKit.framework */,
+				2990330B144A7CC000AAE835 /* Foundation.framework */,
+				2990330D144A7CC000AAE835 /* CoreGraphics.framework */,
+				2990332F144A7CC000AAE835 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2990330F144A7CC000AAE835 /* PusherDemo */ = {
+			isa = PBXGroup;
+			children = (
+				29903318144A7CC000AAE835 /* PusherDemoAppDelegate.h */,
+				29903319144A7CC000AAE835 /* PusherDemoAppDelegate.m */,
+				2990331B144A7CC000AAE835 /* iPhone */,
+				29903322144A7CC000AAE835 /* iPad */,
+				29903310144A7CC000AAE835 /* Supporting Files */,
+			);
+			path = PusherDemo;
+			sourceTree = "<group>";
+		};
+		29903310144A7CC000AAE835 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29903311144A7CC000AAE835 /* PusherDemo-Info.plist */,
+				29903312144A7CC000AAE835 /* InfoPlist.strings */,
+				29903315144A7CC000AAE835 /* main.m */,
+				29903317144A7CC000AAE835 /* PusherDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2990331B144A7CC000AAE835 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				2990331C144A7CC000AAE835 /* PusherDemoAppDelegate_iPhone.h */,
+				2990331D144A7CC000AAE835 /* PusherDemoAppDelegate_iPhone.m */,
+				2990331F144A7CC000AAE835 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		29903322144A7CC000AAE835 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				29903323144A7CC000AAE835 /* PusherDemoAppDelegate_iPad.h */,
+				29903324144A7CC000AAE835 /* PusherDemoAppDelegate_iPad.m */,
+				29903326144A7CC000AAE835 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		29903336144A7CC000AAE835 /* PusherDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2990333C144A7CC000AAE835 /* PusherDemoTests.h */,
+				2990333E144A7CC000AAE835 /* PusherDemoTests.m */,
+				29903337144A7CC000AAE835 /* Supporting Files */,
+			);
+			path = PusherDemoTests;
+			sourceTree = "<group>";
+		};
+		29903337144A7CC000AAE835 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29903338144A7CC000AAE835 /* PusherDemoTests-Info.plist */,
+				29903339144A7CC000AAE835 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29903304144A7CC000AAE835 /* PusherDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29903342144A7CC000AAE835 /* Build configuration list for PBXNativeTarget "PusherDemo" */;
+			buildPhases = (
+				29903301144A7CC000AAE835 /* Sources */,
+				29903302144A7CC000AAE835 /* Frameworks */,
+				29903303144A7CC000AAE835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PusherDemo;
+			productName = PusherDemo;
+			productReference = 29903305144A7CC000AAE835 /* PusherDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2990332D144A7CC000AAE835 /* PusherDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29903345144A7CC000AAE835 /* Build configuration list for PBXNativeTarget "PusherDemoTests" */;
+			buildPhases = (
+				29903329144A7CC000AAE835 /* Sources */,
+				2990332A144A7CC000AAE835 /* Frameworks */,
+				2990332B144A7CC000AAE835 /* Resources */,
+				2990332C144A7CC000AAE835 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29903335144A7CC000AAE835 /* PBXTargetDependency */,
+			);
+			name = PusherDemoTests;
+			productName = PusherDemoTests;
+			productReference = 2990332E144A7CC000AAE835 /* PusherDemoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		299032FC144A7CBF00AAE835 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = iYouVo;
+			};
+			buildConfigurationList = 299032FF144A7CBF00AAE835 /* Build configuration list for PBXProject "PusherDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 299032FA144A7CBF00AAE835;
+			productRefGroup = 29903306144A7CC000AAE835 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29903304144A7CC000AAE835 /* PusherDemo */,
+				2990332D144A7CC000AAE835 /* PusherDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29903303144A7CC000AAE835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29903314144A7CC000AAE835 /* InfoPlist.strings in Resources */,
+				29903321144A7CC000AAE835 /* MainWindow_iPhone.xib in Resources */,
+				29903328144A7CC000AAE835 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2990332B144A7CC000AAE835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2990333B144A7CC000AAE835 /* InfoPlist.strings in Resources */,
+				2990333D144A7CC000AAE835 /* PusherDemoTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2990332C144A7CC000AAE835 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29903301144A7CC000AAE835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29903316144A7CC000AAE835 /* main.m in Sources */,
+				2990331A144A7CC000AAE835 /* PusherDemoAppDelegate.m in Sources */,
+				2990331E144A7CC000AAE835 /* PusherDemoAppDelegate_iPhone.m in Sources */,
+				29903325144A7CC000AAE835 /* PusherDemoAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29903329144A7CC000AAE835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2990333F144A7CC000AAE835 /* PusherDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29903335144A7CC000AAE835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29903304144A7CC000AAE835 /* PusherDemo */;
+			targetProxy = 29903334144A7CC000AAE835 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29903312144A7CC000AAE835 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29903313144A7CC000AAE835 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2990331F144A7CC000AAE835 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29903320144A7CC000AAE835 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		29903326144A7CC000AAE835 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29903327144A7CC000AAE835 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		29903339144A7CC000AAE835 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2990333A144A7CC000AAE835 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29903340144A7CC000AAE835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29903341144A7CC000AAE835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29903343144A7CC000AAE835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PusherDemo/PusherDemo-Prefix.pch";
+				INFOPLIST_FILE = "PusherDemo/PusherDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		29903344144A7CC000AAE835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PusherDemo/PusherDemo-Prefix.pch";
+				INFOPLIST_FILE = "PusherDemo/PusherDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		29903346144A7CC000AAE835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PusherDemo.app/PusherDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PusherDemo/PusherDemo-Prefix.pch";
+				INFOPLIST_FILE = "PusherDemoTests/PusherDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		29903347144A7CC000AAE835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PusherDemo.app/PusherDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PusherDemo/PusherDemo-Prefix.pch";
+				INFOPLIST_FILE = "PusherDemoTests/PusherDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		299032FF144A7CBF00AAE835 /* Build configuration list for PBXProject "PusherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29903340144A7CC000AAE835 /* Debug */,
+				29903341144A7CC000AAE835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29903342144A7CC000AAE835 /* Build configuration list for PBXNativeTarget "PusherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29903343144A7CC000AAE835 /* Debug */,
+				29903344144A7CC000AAE835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		29903345144A7CC000AAE835 /* Build configuration list for PBXNativeTarget "PusherDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29903346144A7CC000AAE835 /* Debug */,
+				29903347144A7CC000AAE835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 299032FC144A7CBF00AAE835 /* Project object */;
+}
