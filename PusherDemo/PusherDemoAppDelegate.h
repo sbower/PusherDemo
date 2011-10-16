@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PTPusherDelegate.h"
 
-@interface PusherDemoAppDelegate : NSObject <UIApplicationDelegate>
+@class PTPusher;
+
+@interface PusherDemoAppDelegate : NSObject <UIApplicationDelegate, PTPusherDelegate> {
+}
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) PTPusher *pusher;
 
 @end

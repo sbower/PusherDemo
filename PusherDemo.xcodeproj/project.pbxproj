@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292E8F11144B790300029681 /* libPusher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E8EEE144AA88C00029681 /* libPusher.a */; };
+		292E8F15144B7A3D00029681 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292E8F14144B7A3D00029681 /* CFNetwork.framework */; };
 		2990330A144A7CC000AAE835 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29903309144A7CC000AAE835 /* UIKit.framework */; };
 		2990330C144A7CC000AAE835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2990330B144A7CC000AAE835 /* Foundation.framework */; };
 		2990330E144A7CC000AAE835 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2990330D144A7CC000AAE835 /* CoreGraphics.framework */; };
@@ -48,13 +50,6 @@
 			remoteGlobalIDString = A3A1A0EB115813E2001EF877;
 			remoteInfo = UnitTests;
 		};
-		292E8EF7144AA8A100029681 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 292E8EE5144AA88C00029681 /* libPusher.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A3D1D2B61158013F009A12AD;
-			remoteInfo = libPusher;
-		};
 		29903334144A7CC000AAE835 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 299032FC144A7CBF00AAE835 /* Project object */;
@@ -66,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		292E8EE5144AA88C00029681 /* libPusher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libPusher.xcodeproj; path = ../libPusher/libPusher.xcodeproj; sourceTree = "<group>"; };
+		292E8F0D144B716800029681 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		292E8F14144B7A3D00029681 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		29903305144A7CC000AAE835 /* PusherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PusherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29903309144A7CC000AAE835 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2990330B144A7CC000AAE835 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292E8F15144B7A3D00029681 /* CFNetwork.framework in Frameworks */,
+				292E8F11144B790300029681 /* libPusher.a in Frameworks */,
 				2990330A144A7CC000AAE835 /* UIKit.framework in Frameworks */,
 				2990330C144A7CC000AAE835 /* Foundation.framework in Frameworks */,
 				2990330E144A7CC000AAE835 /* CoreGraphics.framework in Frameworks */,
@@ -148,6 +147,7 @@
 		29903308144A7CC000AAE835 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				292E8F14144B7A3D00029681 /* CFNetwork.framework */,
 				29903309144A7CC000AAE835 /* UIKit.framework */,
 				2990330B144A7CC000AAE835 /* Foundation.framework */,
 				2990330D144A7CC000AAE835 /* CoreGraphics.framework */,
@@ -159,6 +159,7 @@
 		2990330F144A7CC000AAE835 /* PusherDemo */ = {
 			isa = PBXGroup;
 			children = (
+				292E8F0D144B716800029681 /* Constants.h */,
 				29903318144A7CC000AAE835 /* PusherDemoAppDelegate.h */,
 				29903319144A7CC000AAE835 /* PusherDemoAppDelegate.m */,
 				2990331B144A7CC000AAE835 /* iPhone */,
@@ -232,7 +233,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				292E8EF8144AA8A100029681 /* PBXTargetDependency */,
 			);
 			name = PusherDemo;
 			productName = PusherDemo;
@@ -375,11 +375,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		292E8EF8144AA8A100029681 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = libPusher;
-			targetProxy = 292E8EF7144AA8A100029681 /* PBXContainerItemProxy */;
-		};
 		29903335144A7CC000AAE835 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 29903304144A7CC000AAE835 /* PusherDemo */;
@@ -478,7 +473,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PusherDemo/PusherDemo-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "${PROJECT_DIR}/../libPusher/**";
 				INFOPLIST_FILE = "PusherDemo/PusherDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/PusherDemo-grpctrkxfkicwdbswwgguwfzkpdo/Build/Products/Debug-iphoneos\"",
+				);
 				"OTHER_LDFLAGS[arch=*]" = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -495,7 +495,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PusherDemo/PusherDemo-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "${PROJECT_DIR}/../libPusher/**";
 				INFOPLIST_FILE = "PusherDemo/PusherDemo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/PusherDemo-grpctrkxfkicwdbswwgguwfzkpdo/Build/Products/Debug-iphoneos\"",
+				);
 				"OTHER_LDFLAGS[arch=*]" = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
